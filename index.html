@@ -1,174 +1,112 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ambience Client — Minecraft Java launcher</title>
-    <meta name="description" content="Ambience Client is a desktop launcher for Minecraft: Java Edition with isolated instances, Fabric and Quilt, Modrinth mods and Microsoft sign-in." />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet" />
-    <style>
-      :root {
-        --bg: #0a0b0f;
-        --panel: #12141a;
-        --line: rgba(255, 255, 255, 0.09);
-        --ink: #f5f6f8;
-        --muted: #a7acb7;
-        --gold: #ffc23d;
-        --gold-grad: linear-gradient(180deg, #ffd666 0%, #ffbd2e 45%, #f59e0b 100%);
-      }
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--ink);
-        font: 500 16px/1.6 "Manrope", system-ui, sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
-      a { color: inherit; }
-      .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-      header {
-        position: sticky; top: 0; z-index: 10;
-        background: rgba(10, 11, 15, 0.8);
-        backdrop-filter: blur(16px);
-        border-bottom: 1px solid var(--line);
-      }
-      header .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-      .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-      .brand img { width: 36px; height: 36px; }
-      .brand b { font: 800 20px "Outfit", sans-serif; }
-      .brand small { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.28em; color: var(--gold); line-height: 1; }
-      nav { display: flex; gap: 22px; font-weight: 700; font-size: 14px; }
-      nav a { text-decoration: none; color: var(--muted); }
-      nav a:hover { color: var(--ink); }
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ambience Client</title>
+<meta name="description" content="Ambience Client is an independent desktop launcher for Minecraft: Java Edition.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="name" href="./"><img src="assets/logo.png" alt="" width="28" height="28">Ambience Client</a>
+  <nav><a href="#signing-in">Signing in</a> <a href="#data">Data</a> <a href="privacy.html">Privacy</a> <a href="#contact">Contact</a></nav>
+</header>
 
-      .hero { padding: 80px 0 40px; text-align: center; }
-      .kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
-      h1 { margin: 12px 0 0; font: 800 clamp(40px, 7vw, 72px)/1 "Outfit", sans-serif; letter-spacing: -0.02em; }
-      .lede { max-width: 640px; margin: 20px auto 0; font-size: 18px; color: #c9cdd5; }
-      .status {
-        display: inline-flex; align-items: center; gap: 8px; margin-top: 28px;
-        padding: 10px 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel);
-        font-weight: 700; font-size: 14px;
-      }
-      .status i { width: 8px; height: 8px; border-radius: 99px; background: var(--gold); box-shadow: 0 0 10px rgba(255, 194, 61, 0.6); }
-      .shot {
-        display: block; width: 100%; margin: 48px auto 0; border-radius: 18px;
-        border: 1px solid var(--line); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
-      }
+<main>
+  <h1>Ambience Client</h1>
+  <p class="lead">A desktop launcher for Minecraft: Java Edition, for Windows, macOS and Linux.</p>
 
-      section { padding: 72px 0 0; }
-      h2 { margin: 0 0 8px; font: 800 34px/1.1 "Outfit", sans-serif; }
-      .sub { margin: 0 0 28px; color: var(--muted); }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
-      .card { padding: 20px; border-radius: 16px; border: 1px solid var(--line); background: var(--panel); }
-      .card h3 { margin: 0 0 6px; font: 700 18px "Outfit", sans-serif; }
-      .card p { margin: 0; color: var(--muted); font-size: 15px; }
-      .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
-      .pair img { width: 100%; border-radius: 14px; border: 1px solid var(--line); }
+  <p>
+    Ambience Client installs official Minecraft versions, keeps each setup in its own folder, and starts the game
+    with your own Microsoft account. It's a small independent project. It is still in development and is
+    only being tested privately. There is no public download yet.
+  </p>
 
-      .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-      .steps li {
-        counter-increment: s; position: relative; padding: 16px 18px 16px 58px;
-        border-radius: 14px; border: 1px solid var(--line); background: var(--panel); color: #d4d7de;
-      }
-      .steps li::before {
-        content: counter(s); position: absolute; left: 16px; top: 15px;
-        width: 28px; height: 28px; border-radius: 99px; display: grid; place-items: center;
-        background: var(--gold-grad); color: #1d1300; font-weight: 800; font-size: 13px;
-      }
-      code { font-family: ui-monospace, "JetBrains Mono", monospace; font-size: 0.9em; padding: 1px 6px; border-radius: 6px; background: rgba(255, 255, 255, 0.07); }
-      .facts { margin-top: 14px; }
-      .facts li { margin: 6px 0; color: #d4d7de; }
+  <figure>
+    <img src="assets/home.jpg" alt="The launcher's home screen: a Launch button, the selected instance and a list of instances." width="1280" height="800">
+    <figcaption>The home screen from a development build.</figcaption>
+  </figure>
 
-      footer { margin-top: 90px; padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-      footer p { margin: 4px 0; }
-      @media (max-width: 720px) {
-        nav { display: none; }
-        .pair { grid-template-columns: 1fr; }
-        .hero { padding-top: 48px; }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="wrap">
-        <a class="brand" href="#top">
-          <img src="assets/logo.png" alt="" />
-          <span><b>Ambience</b><small>CLIENT</small></span>
-        </a>
-        <nav>
-          <a href="#features">Features</a>
-          <a href="#account">Account &amp; privacy</a>
-        </nav>
-      </div>
-    </header>
+  <h2 id="features">What it does</h2>
+  <ul>
+    <li>Lists every release, snapshot and old beta/alpha from Mojang's official version manifest, and downloads the game files from Mojang's servers. Each file is checked against its SHA-1 hash.</li>
+    <li>Keeps instances separate. Each one has its own game folder, saves, mods, memory setting and Java choice.</li>
+    <li>Supports Fabric and Quilt, and can search <a href="https://modrinth.com">Modrinth</a> and install a mod into a chosen instance.</li>
+    <li>Has an optional in-game HUD (keystrokes, FPS, CPS, armor) for Fabric. The layout is saved on your computer.</li>
+    <li>Finds installed Java runtimes and picks one that matches the version.</li>
+  </ul>
 
-    <main class="wrap" id="top">
-      <div class="hero">
-        <div class="kicker">Minecraft: Java Edition launcher</div>
-        <h1>Ambience Client</h1>
-        <p class="lede">
-          A desktop launcher for Windows, macOS and Linux. Install any official Minecraft version, keep separate
-          instances, add Fabric, Quilt and Modrinth mods, and launch with your own Microsoft account.
-        </p>
-        <div class="status"><i></i> In development. Private testing, not yet released.</div>
-        <img class="shot" src="assets/home.jpg" alt="Ambience Client home screen with the launch button and instance list" />
-      </div>
+  <div class="shots">
+    <img src="assets/versions.jpg" alt="Versions screen with instances and the list of game versions." width="1280" height="800" loading="lazy">
+    <img src="assets/mods-hud.jpg" alt="Mods screen with the module toggles and the HUD layout editor." width="1280" height="800" loading="lazy">
+  </div>
 
-      <section id="features">
-        <h2>What it does</h2>
-        <p class="sub">A native desktop app built with Tauri and Rust. It is not a website and does not run in a browser.</p>
-        <div class="grid">
-          <div class="card">
-            <h3>Official versions</h3>
-            <p>Releases, snapshots and legacy builds from Mojang's version manifest. Game files are checked against their SHA-1 hashes.</p>
-          </div>
-          <div class="card">
-            <h3>Separate instances</h3>
-            <p>Each instance has its own game folder, mods, saves and settings, with its own version, loader and memory.</p>
-          </div>
-          <div class="card">
-            <h3>Mods</h3>
-            <p>Fabric and Quilt loaders, and Modrinth mod search and install into a chosen instance.</p>
-          </div>
-          <div class="card">
-            <h3>Built-in HUD</h3>
-            <p>An optional in-game HUD for Fabric with keystrokes, FPS, CPS and armor. Layouts are saved on your computer.</p>
-          </div>
-        </div>
-        <div class="pair">
-          <img src="assets/versions.jpg" alt="Versions screen with instances and the game version list" />
-          <img src="assets/mods-hud.jpg" alt="Mods screen with module tiles and the HUD layout editor" />
-        </div>
-      </section>
+  <h2 id="signing-in">Signing in</h2>
+  <p>
+    To play online you sign in with the Microsoft account that owns Minecraft. The launcher uses Microsoft's
+    <a href="https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-device-code">device code flow</a>, so you
+    type your password only on Microsoft's own website, never in the launcher.
+  </p>
+  <ol>
+    <li>The launcher asks Microsoft for a sign-in code and shows it to you.</li>
+    <li>You open <code>microsoft.com/link</code> in your browser, enter the code and sign in there.</li>
+    <li>The launcher receives a Microsoft token with the scopes <code>XboxLive.signin</code> and <code>offline_access</code>, and nothing else.</li>
+    <li>It exchanges that token with Xbox Live (user token, then XSTS) and then with Minecraft services, which return a Minecraft access token.</li>
+    <li>It checks that the account owns Minecraft: Java Edition and reads your Minecraft profile (username and UUID).</li>
+    <li>When you press Launch, the Minecraft token is passed to the game on your computer, which is how the official launcher starts it too.</li>
+  </ol>
+  <p>
+    It's a public client: there is no client secret, and no server of ours sits in the middle. Every request goes directly
+    from your computer to Microsoft, Xbox Live or Mojang.
+  </p>
 
-      <section id="account">
-        <h2>Account &amp; privacy</h2>
-        <p class="sub">You sign in with Microsoft to play the copy of Minecraft you own. Ambience never sees your password.</p>
-        <ol class="steps">
-          <li>The launcher starts Microsoft's <b>device code</b> sign-in and shows you a short code.</li>
-          <li>You enter the code on Microsoft's own page (<code>microsoft.com/link</code>) and sign in there.</li>
-          <li>The launcher exchanges the result through Xbox Live and Minecraft services, requesting only the <code>XboxLive.signin</code> and <code>offline_access</code> scopes.</li>
-          <li>The Minecraft access token is used only to start the game for you.</li>
-        </ol>
-        <ul class="facts">
-          <li>Tokens are stored only on your computer, in the system keyring or a file only your user can read.</li>
-          <li>Tokens are never sent to any Ambience server. There is no Ambience server, and no account data is collected.</li>
-          <li>Telemetry and crash reports are off unless you opt in.</li>
-        </ul>
-      </section>
+  <h2 id="data">What data it touches</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Why</th><th>Where it's kept</th></tr></thead>
+    <tbody>
+      <tr><td>Microsoft, Xbox and Minecraft tokens</td><td>To launch the game as you</td><td>Only on your computer: the system keyring, or a file only your user account can read</td></tr>
+      <tr><td>Minecraft username and UUID</td><td>Shown in the account menu and passed to the game</td><td>Only on your computer</td></tr>
+      <tr><td>Whether the account owns Java Edition</td><td>To tell you before you try to launch</td><td>Only on your computer</td></tr>
+      <tr><td>Instances, settings, HUD layout</td><td>So your setup is there next time</td><td>Only on your computer</td></tr>
+    </tbody>
+  </table>
+  <p>
+    The launcher has no analytics or telemetry, and there is no Ambience account or server. Nothing above is ever sent
+    to us. The full details are in the <a href="privacy.html">privacy policy</a>.
+  </p>
 
-    </main>
+  <h2 id="wont">What it won't do</h2>
+  <ul>
+    <li>It won't let anyone play without owning the game. Online play needs a Microsoft account that owns Minecraft: Java Edition.</li>
+    <li>It won't bypass or change Mojang's authentication, or help anyone join online-mode servers without a valid account.</li>
+    <li>It won't ask for, see or store your password.</li>
+    <li>It won't share, sell or upload account data.</li>
+  </ul>
+  <p>
+    There is an offline mode for singleplayer and LAN, like other launchers. It uses a local name only, and servers that
+    verify accounts will still refuse it.
+  </p>
 
-    <footer>
-      <div class="wrap">
-        <p>Ambience Client is an independent project. It is not affiliated with, endorsed by, or associated with Mojang AB or Microsoft.</p>
-        <p>Minecraft is a trademark of Mojang AB. Game artwork shown in screenshots is © Mojang AB.</p>
-      </div>
-    </footer>
-  </body>
+  <h2 id="status">Status</h2>
+  <ul>
+    <li>Development build, private testing only.</li>
+    <li>Built with Tauri 2 and Rust, with a React interface. It's a native desktop app, not a website.</li>
+    <li>Platforms: Windows 10 and 11, macOS 12 or newer, and Linux.</li>
+  </ul>
+
+  <h2 id="contact">Contact</h2>
+  <p>
+    For questions about the launcher, or about this page, open an issue at
+    <a href="https://github.com/Ambienceeee/ambienceeee.github.io/issues">github.com/Ambienceeee/ambienceeee.github.io/issues</a>.
+  </p>
+</main>
+
+<footer>
+  <p>Ambience Client is not an official Minecraft product. It is not approved by or associated with Mojang or Microsoft.</p>
+  <p>Minecraft is a trademark of Mojang AB. Game imagery in the screenshots is © Mojang AB.</p>
+  <p>Last updated September 25, 2026.</p>
+</footer>
+</body>
 </html>

@@ -1,0 +1,142 @@
+/* Plain, readable project page. No web fonts: it uses whatever the reader's system has. */
+:root {
+  color-scheme: dark;
+  --bg: #111214;
+  --text: #e4e4e2;
+  --dim: #9c9c98;
+  --line: #2a2b2e;
+  --link: #f0b43c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans", sans-serif;
+}
+
+a { color: var(--link); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+}
+
+.top .name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.top nav a {
+  margin-left: 16px;
+  color: var(--dim);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.top nav a:first-child { margin-left: 0; }
+.top nav a:hover { color: var(--text); }
+
+main, footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin: 56px 0 4px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 48px 0 12px;
+  font-size: 22px;
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+}
+
+.lead {
+  margin-top: 0;
+  color: var(--dim);
+  font-size: 19px;
+}
+
+ul, ol { padding-left: 22px; }
+li { margin: 6px 0; }
+
+figure { margin: 32px 0; }
+
+img { max-width: 100%; height: auto; }
+
+figure img,
+.shots img {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+figcaption {
+  margin-top: 8px;
+  color: var(--dim);
+  font-size: 14px;
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+code {
+  font: 0.88em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: #1d1e21;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+th, td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+th { color: var(--dim); font-weight: 600; }
+
+footer {
+  margin-top: 64px;
+  padding-top: 20px;
+  padding-bottom: 48px;
+  border-top: 1px solid var(--line);
+  color: var(--dim);
+  font-size: 14px;
+}
+
+footer p { margin: 4px 0; }
+
+@media (max-width: 600px) {
+  .shots { grid-template-columns: 1fr; }
+  h1 { font-size: 28px; }
+  table { font-size: 14px; }
+}
