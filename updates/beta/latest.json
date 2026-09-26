@@ -1,0 +1,23 @@
+{
+  "version": "0.1.3",
+  "notes": "Ambience Client 0.1.3",
+  "pub_date": "2026-09-26T00:42:57Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMmVkajlKUWF6TGxCdWFoVjVLbDYxSi9qQ2dFS1E0YlVwUFRXMkppUFBYc0FMUkdKVE04QzhPSjdrd0N3aUExSFMwRC9DUmlXK3RiN0c4U3U2WkdOVEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzgzMTA2CWZpbGU6QW1iaWVuY2UgQ2xpZW50LmFwcC50YXIuZ3oKUGtNQ1JJeTQ2ZVdyVzI1QkZIdCsrWDNqZzBoU25yY1prcGRCMzZIRXV2WnA5R0dTNzIzM1BUc01jT3YrbmFuUzdrTHBrdjV0VkdMWEJTUnU2NXVOQUE9PQo=",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.3/ambience-client-0.1.3-macos-universal.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMmVkajlKUWF6TGxCdWFoVjVLbDYxSi9qQ2dFS1E0YlVwUFRXMkppUFBYc0FMUkdKVE04QzhPSjdrd0N3aUExSFMwRC9DUmlXK3RiN0c4U3U2WkdOVEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzgzMTA2CWZpbGU6QW1iaWVuY2UgQ2xpZW50LmFwcC50YXIuZ3oKUGtNQ1JJeTQ2ZVdyVzI1QkZIdCsrWDNqZzBoU25yY1prcGRCMzZIRXV2WnA5R0dTNzIzM1BUc01jT3YrbmFuUzdrTHBrdjV0VkdMWEJTUnU2NXVOQUE9PQo=",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.3/ambience-client-0.1.3-macos-universal.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMllyenNiZ0dGSGVkd2RIQnorNkxvQVJHWUhFVjFsVVJ3WHhZb0ZVeXAzTC9XZHZ6eTgydUgvcFJlMFE2VVI3blRNZ0xneWFLTGU1a3dlbXRvMExpVFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzgzMzUzCWZpbGU6QW1iaWVuY2UgQ2xpZW50XzAuMS4zX3g2NC1zZXR1cC5leGUKYlBPZmxmY0d4Q3A2QXF6Y3ZNcm92RzVmL2VnRFJZZE5TWHpYQlNhRkhDRk5EbHUvWEtkMEpUZGVEVkNLR0k0akg4Y1I0aGVwUWo5UWpnVUV1ZXR6QXc9PQo=",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.3/ambience-client-0.1.3-windows-x64-setup.exe"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMmFrTHBSNUVBaG93aHg0UUQwYVU0b2ZEYmtYV2RTVU0wMGQycm56ZWZvZmhXQUJYZHRXaTN2dkJzZnhXNWZLdHliU1Zmbmw3TWZCTFhWZHU1Sks3OXdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzgzMjkzCWZpbGU6QW1iaWVuY2UgQ2xpZW50XzAuMS4zX2FtZDY0LkFwcEltYWdlCm9qSk5LdlZ1MGpBM0c1enNYRlEwS1dFQy8yS3dHU0VDamR0RmlTYzYyZGJTTk94WUhxVXEzeXFFMFExSUVhN1lyalZJbkw4VDdlUFlURE5wRUs5N0RBPT0K",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.3/ambience-client-0.1.3-linux-x86_64.AppImage"
+    }
+  }
+}
