@@ -1,23 +1,23 @@
 {
-  "version": "0.1.9",
-  "notes": "Ambience Client 0.1.9",
-  "pub_date": "2026-09-28T04:04:38Z",
+  "version": "0.1.10",
+  "notes": "Ambience Client 0.1.10",
+  "pub_date": "2026-09-28T20:06:33Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlcrcHgvdzl1UFNJcTZPbGRtcWx1MkNPL1JjNHNvbnlHMlBvbjRveDAyRjBOQVpNT0V1WDhQRWVxQzJWZW5STnEvNzkyMU4wejI3TlpnM3QrL3RVVmdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTY3NTgxCWZpbGU6U29sIENsaWVudC5hcHAudGFyLmd6ClFIaWFPdVkrNTdXa281dXB4YWxpVTlRQnVHN2ZOcWtlY3F6ZStSOWdlMGF2WjByRWRnTVpNU0pnS1VwQnRpa3dVbStERlJkeGU5WGJmMmZUcTEwaERnPT0K",
-      "url": "https://ambienceeee.github.io/updates/files/0.1.9/ambience-client-0.1.9-macos-universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlRkcU1hTGtaanJqcEFMTE5WeUVsWktZb2VhOE40cENpanNZTGpybG1iaDg5a3ljTXBMRnRhZVg4OGRwVmdGRjBlbWxXbW9jOEdvZGZPd0JGaHB1MHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjI1NjEyCWZpbGU6U29sIENsaWVudC5hcHAudGFyLmd6CkY1d05paC9jYkZUVEZXZG9CdzE1a2lQOHgyWVZFNUJtQXdzaHJUUlRpWERZamtWNU40Zm5yOWtNNGx3MER4bUcxSG51ditpZGF3Q0diYlFqcS9rM0RnPT0K",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.10/ambience-client-0.1.10-macos-universal.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlcrcHgvdzl1UFNJcTZPbGRtcWx1MkNPL1JjNHNvbnlHMlBvbjRveDAyRjBOQVpNT0V1WDhQRWVxQzJWZW5STnEvNzkyMU4wejI3TlpnM3QrL3RVVmdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTY3NTgxCWZpbGU6U29sIENsaWVudC5hcHAudGFyLmd6ClFIaWFPdVkrNTdXa281dXB4YWxpVTlRQnVHN2ZOcWtlY3F6ZStSOWdlMGF2WjByRWRnTVpNU0pnS1VwQnRpa3dVbStERlJkeGU5WGJmMmZUcTEwaERnPT0K",
-      "url": "https://ambienceeee.github.io/updates/files/0.1.9/ambience-client-0.1.9-macos-universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlRkcU1hTGtaanJqcEFMTE5WeUVsWktZb2VhOE40cENpanNZTGpybG1iaDg5a3ljTXBMRnRhZVg4OGRwVmdGRjBlbWxXbW9jOEdvZGZPd0JGaHB1MHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjI1NjEyCWZpbGU6U29sIENsaWVudC5hcHAudGFyLmd6CkY1d05paC9jYkZUVEZXZG9CdzE1a2lQOHgyWVZFNUJtQXdzaHJUUlRpWERZamtWNU40Zm5yOWtNNGx3MER4bUcxSG51ditpZGF3Q0diYlFqcS9rM0RnPT0K",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.10/ambience-client-0.1.10-macos-universal.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlgwdUhhZFV3NFcrQWo3c05uYUV2SkFueWlUR2tnWGlac1MvRDF2VUVtbFRSeHRHYTQ2aFk3YWtudnA5NFlLYkx5QzBNcWEvdS9HV2lHaUkzblAxcWdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTY4MjMwCWZpbGU6U29sIENsaWVudF8wLjEuOV94NjQtc2V0dXAuZXhlCis5UEUrVUYxclhLLzhBVjdCZmxBU0tseTMreWhnUWNiUlNMYTRVUk9PTXRVOTlVdEViM2k0T1ZHanh6dmdzNDZ2QWdoMHh5eTkrcGp3Rm16b3dBZEJnPT0K",
-      "url": "https://ambienceeee.github.io/updates/files/0.1.9/ambience-client-0.1.9-windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlZqeVpGWDIvVGdFc1VGMVZ1OS9CVXlBN3J5RTZYRkpBR0g1blk2WWVCU3VrQ3YrMzRFVXJ6RW4ycGEwTFlGWlRyd29sN1JadTcyOXl6WWNNb1ZCeEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjI1OTE2CWZpbGU6U29sIENsaWVudF8wLjEuMTBfeDY0LXNldHVwLmV4ZQpEOUEzZllOZEdLNjF0NlJzdk1XWGVyaUFlUllVVzdkQlR0NHA3N0VDaDE3TEE1THdGSnBFZWNDcy82WWREQVpBYVFKM1F0OHBTZDN0T2JuSFRBdm5Cdz09Cg==",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.10/ambience-client-0.1.10-windows-x64-setup.exe"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMmJrSmhFd0hrdFdtR01FTDQ4SGt4aVZUdC9YZmgrUVNOWnYwajRzNDRwQ2pneXpXUGpHeEdsYW1vbm5Wb3owUDhBSlBOWGdMbU9qRk12d2VhSndNVlFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTY3NjcwCWZpbGU6U29sIENsaWVudF8wLjEuOV9hbWQ2NC5BcHBJbWFnZQpLblhEbGtoKzV3YXZOWDREMjNGejVsWXJxVzZ0ZkQ0eEx0ZTd2MmpVNG10ODhyN0IyNFAvVGRnbFE3LzlXWmlkSE16Um9IVW1NSXhBNS9Kb0hFMW9DUT09Cg==",
-      "url": "https://ambienceeee.github.io/updates/files/0.1.9/ambience-client-0.1.9-linux-x86_64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlZyRllTTkV5RDk1NHJCRFJmakRHdnBjNzZ5NXdrZ3p2by9VUGpqRmw2VEg1VERORmE1TDNNNXJZM0pkeHBjWUszQVZRN0ttZUFpU1lYb3ZRYTV5cEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjI1OTAzCWZpbGU6U29sIENsaWVudF8wLjEuMTBfYW1kNjQuQXBwSW1hZ2UKSUlXZFRQaTBPNFpFOXl5QmVsUnFMcm91bnV5YWk2ay81WHlLU1BiMkNYeDMxNnI3aFo5SEhGRm1wbS9Hb2d4OUtMd1pjWktUeVRwUmFESW5UdjluQWc9PQo=",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.10/ambience-client-0.1.10-linux-x86_64.AppImage"
     }
   }
 }
