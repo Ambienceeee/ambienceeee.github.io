@@ -1,11 +1,11 @@
 {
-  "version": "0.1.18",
-  "notes": "Sol Client 0.1.18",
-  "pub_date": "2026-10-06T15:31:18Z",
+  "version": "0.1.19",
+  "notes": "Sol Client 0.1.19",
+  "pub_date": "2026-10-06T17:58:22Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMmJmbkdMT3UxdkJEZGkyVUloNnBQbmkzZTl1bm0rMFQrN3A0bWFZNmdpZTkyMTY1UlZDblBSSGIxaFlxUGJxK0xWY1RBSURCU3ZOd3ZKMG9IMFRSaFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzAwNTY0CWZpbGU6U29sIENsaWVudF8wLjEuMThfeDY0LXNldHVwLmV4ZQp4WmxYTm9hb3hIZ3ZkdHB6NTkvNnU1UmIwVUNjK3lmUHZJVzlIT21aUERuRVhpK1BSSjJuZ1lKZHMvNSt6bzFYdEl0dWZSNSs5YlJrK3haTGxydStEUT09Cg==",
-      "url": "https://ambienceeee.github.io/updates/files/0.1.18/sol-client-0.1.18-windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlQvYnc0L2pMSDN0VllnQzZSTzl5QUkzOUZaZGtFQ3RLYXpRYnY3Zy90L204N0dKQjZtNGJyOFZzLzk2bGN5ZE1tN1QwQ2RuVXJ2RHNITURrNkRMM0FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzA5NDY0CWZpbGU6U29sIENsaWVudF8wLjEuMTlfeDY0LXNldHVwLmV4ZQp2YldXaHlJY0sveWRoTFhTbmd4YmJOeWJNMXBvcnZDdGdMcURQZFBlUkRJclNQckNjYWpaM2xDSDFVZ0QwcHFtOTloOHBjb0VIcXNiS1dpYVRyZExBZz09Cg==",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.19/sol-client-0.1.19-windows-x64-setup.exe"
     }
   }
 }
