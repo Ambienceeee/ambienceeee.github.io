@@ -1,11 +1,11 @@
 {
-  "version": "0.1.17",
-  "notes": "Sol Client 0.1.17",
-  "pub_date": "2026-10-06T14:18:33Z",
+  "version": "0.1.18",
+  "notes": "Sol Client 0.1.18",
+  "pub_date": "2026-10-06T15:31:18Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlpIYTJoQ0hoUkxCUlRyUHlGTVh4WmtaZWxKOUV3NlZsRWF3WEV3UDloWndtTmZUaUg4NUlKdEJjaXE4L21BV0lsL2RzUlhFNzhiVzNhOFBCT083NkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjk1MzEzCWZpbGU6U29sIENsaWVudC5hcHAudGFyLmd6CjlMbHArT0VRQXBtS3hTeUxhUi9FM3Q1OVZ2aFBMckVNUUNkM3B5VkZVZzhBUE01bjJTVTU2aWtrQVpzRzV2MEdXNDFrU2JnT0JZM01vVWcwdThGRkRRPT0K",
-      "url": "https://ambienceeee.github.io/updates/files/0.1.17/ambience-client-0.1.17-macos-universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbTBXWXRxdDcrMlZ2ZlZqQWtydWxoaHdGQTRPUjRCdTVVaEg4VmFOakJwbVZCbFExMlRjalhOUEczNTBrdzhpYWwzcGxqekdlNGg1Mit2dExRUk9HL2xaTEc0c1Z0RVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzAwMDgzCWZpbGU6U29sIENsaWVudC5hcHAudGFyLmd6CnYzeXlWK1JsanIzanU5R2lxV1laYUIrS3NCaDBPSkVUR2VhVFVlNkJRQUlHRkN2L3RDSG1VUHFpWU1JTHRUdGRtMDZPN016OUs1Umg5UW5VZE56ZEFnPT0K",
+      "url": "https://ambienceeee.github.io/updates/files/0.1.18/sol-client-0.1.18-macos-universal.app.tar.gz"
     }
   }
 }
